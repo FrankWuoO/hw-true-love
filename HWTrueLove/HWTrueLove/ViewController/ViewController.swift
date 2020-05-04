@@ -57,9 +57,7 @@ class ViewController: UIViewController {
     
     // MARK: Action
     @objc private func triggerRefreshControl(_ refreshControl: UIRefreshControl) {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-            self.viewModel.refreshData()
-        }
+        viewModel.refreshData()
     }
     
 }
