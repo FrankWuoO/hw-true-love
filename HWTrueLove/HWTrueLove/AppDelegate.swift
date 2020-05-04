@@ -14,6 +14,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        // Unit test mode
+        if ProcessInfo.processInfo.environment["XCTestConfigurationFilePath"] != nil {
+            window?.rootViewController = UIViewController()
+        }
         // Override point for customization after application launch.
         return true
     }
