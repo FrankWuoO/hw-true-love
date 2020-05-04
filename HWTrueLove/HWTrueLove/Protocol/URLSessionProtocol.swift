@@ -9,13 +9,13 @@
 import Foundation
 
 protocol URLSessionProtocol {
-  typealias DataTaskCallBack = (Data?, URLResponse?, Error?) -> Void
+    typealias DataTaskCallBack = (Data?, URLResponse?, Error?) -> Void
 
-  func dataTask(with url: URL, completionHandler: @escaping DataTaskCallBack) -> URLSessionDataTaskProtocol
+    func dataTask(with url: URL, completionHandler: @escaping DataTaskCallBack) -> URLSessionDataTaskProtocol
 }
 
 protocol URLSessionDataTaskProtocol {
-  func resume()
+    func resume()
 }
 
 extension URLSession: URLSessionProtocol {
