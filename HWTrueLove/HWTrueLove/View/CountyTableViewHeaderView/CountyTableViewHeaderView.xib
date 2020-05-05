@@ -14,32 +14,58 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="縣市" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jcS-Kn-6Rk">
-                    <rect key="frame" x="16" y="8" width="36.5" height="25.5"/>
-                    <fontDescription key="fontDescription" name="PingFangTC-Medium" family="PingFang TC" pointSize="18"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="計算中..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Wi-j3-kO6">
-                    <rect key="frame" x="329" y="8" width="69" height="26"/>
-                    <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="18"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KkY-Eh-8Bf">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="縣市" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jcS-Kn-6Rk">
+                            <rect key="frame" x="16" y="8" width="36.5" height="28"/>
+                            <fontDescription key="fontDescription" name="PingFangTC-Medium" family="PingFang TC" pointSize="18"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Ah-P2-YTA">
+                            <rect key="frame" x="370" y="0.0" width="44" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="44" id="qUX-iq-cOh"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                            <state key="normal" title="+"/>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="計算中..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Wi-j3-kO6">
+                            <rect key="frame" x="293" y="8" width="69" height="28"/>
+                            <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="18"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="0Ah-P2-YTA" secondAttribute="bottom" id="AWs-q0-BKJ"/>
+                        <constraint firstItem="jcS-Kn-6Rk" firstAttribute="top" secondItem="KkY-Eh-8Bf" secondAttribute="top" constant="8" id="Fr7-Wr-gLx"/>
+                        <constraint firstAttribute="bottom" secondItem="8Wi-j3-kO6" secondAttribute="bottom" constant="8" id="JgT-zH-cEY"/>
+                        <constraint firstItem="8Wi-j3-kO6" firstAttribute="top" secondItem="KkY-Eh-8Bf" secondAttribute="top" constant="8" id="adJ-Dp-kOZ"/>
+                        <constraint firstAttribute="bottom" secondItem="jcS-Kn-6Rk" secondAttribute="bottom" constant="8" id="d4r-zA-Xlk"/>
+                        <constraint firstAttribute="trailing" secondItem="0Ah-P2-YTA" secondAttribute="trailing" id="d5f-GD-qEq"/>
+                        <constraint firstItem="0Ah-P2-YTA" firstAttribute="top" secondItem="KkY-Eh-8Bf" secondAttribute="top" id="hbU-iG-ScG"/>
+                        <constraint firstItem="jcS-Kn-6Rk" firstAttribute="leading" secondItem="KkY-Eh-8Bf" secondAttribute="leading" constant="16" id="ihe-cp-iNY"/>
+                        <constraint firstItem="0Ah-P2-YTA" firstAttribute="leading" secondItem="8Wi-j3-kO6" secondAttribute="trailing" constant="8" id="xE1-67-DAc"/>
+                    </constraints>
+                </view>
             </subviews>
             <constraints>
-                <constraint firstItem="8Wi-j3-kO6" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="B3Z-Rx-teR"/>
-                <constraint firstItem="jcS-Kn-6Rk" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="k8C-Pf-HHv"/>
-                <constraint firstItem="jcS-Kn-6Rk" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="kqr-ec-78o"/>
-                <constraint firstAttribute="trailing" secondItem="8Wi-j3-kO6" secondAttribute="trailing" constant="16" id="sfc-kf-t6j"/>
+                <constraint firstItem="KkY-Eh-8Bf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="I3s-ZN-emW"/>
+                <constraint firstItem="KkY-Eh-8Bf" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="WJm-JN-bhn"/>
+                <constraint firstAttribute="trailing" secondItem="KkY-Eh-8Bf" secondAttribute="trailing" id="arv-ts-eIF"/>
+                <constraint firstItem="KkY-Eh-8Bf" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="iWH-Qk-2h4"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
                 <outlet property="amountLabel" destination="8Wi-j3-kO6" id="4QL-AF-Xvl"/>
                 <outlet property="countyLabel" destination="jcS-Kn-6Rk" id="e9i-ve-7UE"/>
+                <outlet property="extendButton" destination="0Ah-P2-YTA" id="XDh-SP-PNV"/>
             </connections>
-            <point key="canvasLocation" x="139" y="108"/>
+            <point key="canvasLocation" x="137.68115942028987" y="107.8125"/>
         </view>
     </objects>
 </document>

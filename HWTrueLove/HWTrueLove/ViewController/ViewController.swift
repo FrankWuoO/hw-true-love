@@ -53,13 +53,24 @@ class ViewController: UIViewController {
             }
             self.listTableView.reloadData()
         }
+        viewModel.didReceiveError = { [unowned self] error in
+            self.showErrorAlert(error)
+        }
+        viewModel.needToReloadSection = { [unowned self] section in
+            self.listTableView.reloadSections(IndexSet(integer: section), with: .automatic)
+        }
     }
     
+    private func showErrorAlert(_ error: Error) {
+        let alertVC = UIAlertController.init(title: "錯誤訊息", message: error.localizedDescription, preferredStyle: .alert)
+        let cancelAction = UIAlertAction(title: "取消", style: .cancel, handler: nil)
+        alertVC.addAction(cancelAction)
+        present(alertVC, animated: true, completion: nil)
+    }
     // MARK: Action
     @objc private func triggerRefreshControl(_ refreshControl: UIRefreshControl) {
         viewModel.refreshData()
     }
-    
 }
 
 
@@ -77,8 +88,6 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        return viewModel.tableView(tableView, cellForRowAt: indexPath)
     }
-    
-    
 }

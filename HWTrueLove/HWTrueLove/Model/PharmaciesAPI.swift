@@ -15,6 +15,8 @@ protocol MaskStoreAbility {
     var county: String { get }
     
     var address: String { get }
+    
+    var name: String { get }
 }
 
 // MARK: - PharmaciesAPI
@@ -42,19 +44,25 @@ struct PharmaciesAPI: Codable {
             return properties.address
         }
         
+        var name: String {
+            return properties.name
+        }
+        
         // MARK: Hotfix
         mutating func changeCounty(_ newCounty: String) {
-            properties = Properties(maskAdult: maskAdult, county: newCounty, address: address)
+            properties = Properties(maskAdult: maskAdult, county: newCounty, address: address, name: name)
         }
+        
         // MARK: - Properties
         struct Properties: Codable {
             let maskAdult: Int
             let county: String
             let address: String
-
+            let name: String
+            
             enum CodingKeys: String, CodingKey {
                 case maskAdult = "mask_adult"
-                case county, address
+                case county, address, name
             }
         }
     }

@@ -11,4 +11,5 @@ import UIKit
 class CountyTableViewHeaderView: UITableViewHeaderFooterView {
     @IBOutlet weak var countyLabel: UILabel!
     @IBOutlet weak var amountLabel: UILabel!
+    @IBOutlet weak var extendButton: UIButton!
 }
