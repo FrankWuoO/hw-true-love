@@ -13,6 +13,20 @@
 		D706BC22245FEF03009EA6A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D706BC21245FEF03009EA6A5 /* Assets.xcassets */; };
 		D706BC25245FEF03009EA6A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D706BC23245FEF03009EA6A5 /* LaunchScreen.storyboard */; };
 		D706BC30245FEF03009EA6A5 /* HWTrueLoveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D706BC2F245FEF03009EA6A5 /* HWTrueLoveTests.swift */; };
+		D706BC3F245FEFF8009EA6A5 /* PharmaciesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D706BC3E245FEFF8009EA6A5 /* PharmaciesAPI.swift */; };
+		D706BC42245FF0BD009EA6A5 /* PharmacyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D706BC41245FF0BD009EA6A5 /* PharmacyService.swift */; };
+		D706BC46245FF5FD009EA6A5 /* PharmacyServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D706BC45245FF5FD009EA6A5 /* PharmacyServiceTests.swift */; };
+		D706BC48245FF684009EA6A5 /* MockURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = D706BC47245FF684009EA6A5 /* MockURLSession.swift */; };
+		D706BC4F246005C7009EA6A5 /* URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D706BC4E246005C7009EA6A5 /* URLSessionProtocol.swift */; };
+		D706BC5324600B05009EA6A5 /* NSError+HWTrueLove.swift in Sources */ = {isa = PBXBuildFile; fileRef = D706BC5224600B05009EA6A5 /* NSError+HWTrueLove.swift */; };
+		D706BC5624600C4C009EA6A5 /* correct_data.json in Resources */ = {isa = PBXBuildFile; fileRef = D706BC5524600C4C009EA6A5 /* correct_data.json */; };
+		D706BC5B2460134D009EA6A5 /* PharmaciesAPITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D706BC5A2460134D009EA6A5 /* PharmaciesAPITest.swift */; };
+		D706BC5F246039A3009EA6A5 /* ViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D706BC5E246039A3009EA6A5 /* ViewControllerViewModel.swift */; };
+		D706BC622460444C009EA6A5 /* CountyTableViewHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D706BC612460444C009EA6A5 /* CountyTableViewHeaderView.swift */; };
+		D706BC65246044B4009EA6A5 /* CountyTableViewHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D706BC64246044B4009EA6A5 /* CountyTableViewHeaderView.xib */; };
+		D731EA5A246060950010A5A7 /* ViewControllerViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D731EA59246060950010A5A7 /* ViewControllerViewModelTest.swift */; };
+		D731EA5E2460F87D0010A5A7 /* MaskStoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D731EA5C2460F87D0010A5A7 /* MaskStoreTableViewCell.swift */; };
+		D731EA5F2460F87D0010A5A7 /* MaskStoreTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D731EA5D2460F87D0010A5A7 /* MaskStoreTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +50,20 @@
 		D706BC2B245FEF03009EA6A5 /* HWTrueLoveTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HWTrueLoveTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D706BC2F245FEF03009EA6A5 /* HWTrueLoveTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HWTrueLoveTests.swift; sourceTree = "<group>"; };
 		D706BC31245FEF03009EA6A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D706BC3E245FEFF8009EA6A5 /* PharmaciesAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharmaciesAPI.swift; sourceTree = "<group>"; };
+		D706BC41245FF0BD009EA6A5 /* PharmacyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharmacyService.swift; sourceTree = "<group>"; };
+		D706BC45245FF5FD009EA6A5 /* PharmacyServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharmacyServiceTests.swift; sourceTree = "<group>"; };
+		D706BC47245FF684009EA6A5 /* MockURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLSession.swift; sourceTree = "<group>"; };
+		D706BC4E246005C7009EA6A5 /* URLSessionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionProtocol.swift; sourceTree = "<group>"; };
+		D706BC5224600B05009EA6A5 /* NSError+HWTrueLove.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSError+HWTrueLove.swift"; sourceTree = "<group>"; };
+		D706BC5524600C4C009EA6A5 /* correct_data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = correct_data.json; path = ../../../../../../../Desktop/correct_data.json; sourceTree = "<group>"; };
+		D706BC5A2460134D009EA6A5 /* PharmaciesAPITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharmaciesAPITest.swift; sourceTree = "<group>"; };
+		D706BC5E246039A3009EA6A5 /* ViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerViewModel.swift; sourceTree = "<group>"; };
+		D706BC612460444C009EA6A5 /* CountyTableViewHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountyTableViewHeaderView.swift; sourceTree = "<group>"; };
+		D706BC64246044B4009EA6A5 /* CountyTableViewHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CountyTableViewHeaderView.xib; sourceTree = "<group>"; };
+		D731EA59246060950010A5A7 /* ViewControllerViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerViewModelTest.swift; sourceTree = "<group>"; };
+		D731EA5C2460F87D0010A5A7 /* MaskStoreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaskStoreTableViewCell.swift; sourceTree = "<group>"; };
+		D731EA5D2460F87D0010A5A7 /* MaskStoreTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MaskStoreTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +106,9 @@
 			isa = PBXGroup;
 			children = (
 				D706BC18245FEF02009EA6A5 /* AppDelegate.swift */,
+				D706BC5024600AE7009EA6A5 /* Helper */,
+				D706BC4D246005B5009EA6A5 /* Protocol */,
+				D706BC40245FF09A009EA6A5 /* Service */,
 				D706BC3C245FEF86009EA6A5 /* ViewController */,
 				D706BC3B245FEF7F009EA6A5 /* View */,
 				D706BC3A245FEF79009EA6A5 /* Model */,
@@ -92,6 +123,10 @@
 		D706BC2E245FEF03009EA6A5 /* HWTrueLoveTests */ = {
 			isa = PBXGroup;
 			children = (
+				D731EA58246060850010A5A7 /* ViewModel */,
+				D706BC5424600C3C009EA6A5 /* Resource */,
+				D706BC44245FF5EF009EA6A5 /* Service */,
+				D706BC5724601308009EA6A5 /* Model */,
 				D706BC2F245FEF03009EA6A5 /* HWTrueLoveTests.swift */,
 				D706BC31245FEF03009EA6A5 /* Info.plist */,
 			);
@@ -101,6 +136,7 @@
 		D706BC3A245FEF79009EA6A5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D706BC3E245FEFF8009EA6A5 /* PharmaciesAPI.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -108,6 +144,8 @@
 		D706BC3B245FEF7F009EA6A5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D731EA5B2460F8670010A5A7 /* MaskStoreTableViewCell */,
+				D706BC6324604456009EA6A5 /* CountyTableViewHeaderView */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -116,8 +154,92 @@
 			isa = PBXGroup;
 			children = (
 				D706BC1C245FEF02009EA6A5 /* ViewController.swift */,
+				D706BC5E246039A3009EA6A5 /* ViewControllerViewModel.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		D706BC40245FF09A009EA6A5 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				D706BC41245FF0BD009EA6A5 /* PharmacyService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		D706BC44245FF5EF009EA6A5 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				D706BC47245FF684009EA6A5 /* MockURLSession.swift */,
+				D706BC45245FF5FD009EA6A5 /* PharmacyServiceTests.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		D706BC4D246005B5009EA6A5 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				D706BC4E246005C7009EA6A5 /* URLSessionProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		D706BC5024600AE7009EA6A5 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				D706BC5124600AEB009EA6A5 /* Extension */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		D706BC5124600AEB009EA6A5 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D706BC5224600B05009EA6A5 /* NSError+HWTrueLove.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		D706BC5424600C3C009EA6A5 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				D706BC5524600C4C009EA6A5 /* correct_data.json */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		D706BC5724601308009EA6A5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D706BC5A2460134D009EA6A5 /* PharmaciesAPITest.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D706BC6324604456009EA6A5 /* CountyTableViewHeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				D706BC612460444C009EA6A5 /* CountyTableViewHeaderView.swift */,
+				D706BC64246044B4009EA6A5 /* CountyTableViewHeaderView.xib */,
+			);
+			path = CountyTableViewHeaderView;
+			sourceTree = "<group>";
+		};
+		D731EA58246060850010A5A7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D731EA59246060950010A5A7 /* ViewControllerViewModelTest.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D731EA5B2460F8670010A5A7 /* MaskStoreTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				D731EA5C2460F87D0010A5A7 /* MaskStoreTableViewCell.swift */,
+				D731EA5D2460F87D0010A5A7 /* MaskStoreTableViewCell.xib */,
+			);
+			path = MaskStoreTableViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,7 +325,9 @@
 			files = (
 				D706BC25245FEF03009EA6A5 /* LaunchScreen.storyboard in Resources */,
 				D706BC22245FEF03009EA6A5 /* Assets.xcassets in Resources */,
+				D731EA5F2460F87D0010A5A7 /* MaskStoreTableViewCell.xib in Resources */,
 				D706BC20245FEF02009EA6A5 /* Main.storyboard in Resources */,
+				D706BC65246044B4009EA6A5 /* CountyTableViewHeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,6 +335,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D706BC5624600C4C009EA6A5 /* correct_data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,8 +346,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D706BC4F246005C7009EA6A5 /* URLSessionProtocol.swift in Sources */,
 				D706BC1D245FEF02009EA6A5 /* ViewController.swift in Sources */,
 				D706BC19245FEF02009EA6A5 /* AppDelegate.swift in Sources */,
+				D706BC622460444C009EA6A5 /* CountyTableViewHeaderView.swift in Sources */,
+				D706BC5324600B05009EA6A5 /* NSError+HWTrueLove.swift in Sources */,
+				D706BC42245FF0BD009EA6A5 /* PharmacyService.swift in Sources */,
+				D731EA5E2460F87D0010A5A7 /* MaskStoreTableViewCell.swift in Sources */,
+				D706BC5F246039A3009EA6A5 /* ViewControllerViewModel.swift in Sources */,
+				D706BC3F245FEFF8009EA6A5 /* PharmaciesAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,7 +362,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D731EA5A246060950010A5A7 /* ViewControllerViewModelTest.swift in Sources */,
+				D706BC48245FF684009EA6A5 /* MockURLSession.swift in Sources */,
 				D706BC30245FEF03009EA6A5 /* HWTrueLoveTests.swift in Sources */,
+				D706BC46245FF5FD009EA6A5 /* PharmacyServiceTests.swift in Sources */,
+				D706BC5B2460134D009EA6A5 /* PharmaciesAPITest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
